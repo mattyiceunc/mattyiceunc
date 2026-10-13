@@ -1,0 +1,25 @@
+# Stub workflow. Copy to .github/workflows/TODO_NAME.yml and replace every TODO.
+# Do not put secret values in this file. Reference secrets by name only.
+name: TODO_CHECK_NAME
+
+on:
+  pull_request:
+  push:
+    branches: [TODO_DEFAULT_BRANCH]
+
+jobs:
+  build:
+    name: TODO_STATUS_CHECK_NAME
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: TODO_JDK
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Test
+        run: TODO_TEST_COMMAND
