@@ -5,34 +5,20 @@ description: Use when adding or adjusting a GitHub Actions workflow that builds 
 
 # CI GitHub Actions setup
 
-## Purpose
+Make GitHub Actions run the same build and test commands a local check runs.
+Ground truth: [Workflow shape](references/workflow-shape.md). Do not invent a
+second playbook — extend that doc when the pattern changes.
 
-Make GitHub Actions run the same build and test commands a local check would
-run. Extend an existing workflow when one already does that job.
+## Checklist
 
-## Steps
+1. Read current workflows and the local build and test commands before adding a file.
+2. Extend the workflow that already runs those commands. Add a new workflow only if none does.
+3. Set up the same JDK, cache Gradle the way the repo already does, and keep secret values out of the YAML.
+4. Leave the job name equal to the status check branch protection should require.
 
-1. Read current workflows, the local build and test commands, and the JDK,
-   Android SDK, or Gradle version those commands need.
-2. If a workflow already runs those commands, edit that workflow instead of
-   adding a second pipeline.
-3. Check out the repo, set up the same JDK, and cache Gradle with the cache
-   the repo already uses or with Gradle's current recommended cache. Then run
-   the project's build and test commands.
-4. Trigger on pull requests and on pushes to the default branch, unless the
-   repo documents a different trigger. Do not add a path filter that skips
-   the workflow when shared build logic changes.
-5. Keep secret values out of the workflow file. Reference a repository or
-   environment secret by name only when a step cannot run without it.
-6. Upload test or coverage artifacts only when the project already produces
-   those reports.
-7. Check that the YAML parses and that the job name is the status check branch
-   protection should require.
+## Read next
 
-## TODO
-
-- [ ] Gradle or other commands CI must run
-- [ ] JDK and Android SDK versions
-- [ ] Required status-check name
-- [ ] Secret names the workflow may read (names only)
-- [ ] Whether workflow files must also be mirrored outside GitHub
+| Doc | When |
+| --- | --- |
+| [Workflow shape](references/workflow-shape.md) | Triggers, cache, secrets, and TODOs |
+| [Workflow stub](examples/ci-workflow.yml) | A workflow to adapt |

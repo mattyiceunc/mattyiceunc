@@ -5,33 +5,20 @@ description: Use when declaring required environment variables and secrets so a 
 
 # Secrets and env setup
 
-## Purpose
-
 Document every variable a build or CI job needs, and keep the values out of
-git. Example files list names only.
+git. Ground truth: [Env inventory](references/env-inventory.md). Do not
+invent a second playbook — extend that doc when the pattern changes.
 
-## Steps
+## Checklist
 
-1. Search for environment reads, Gradle properties, and CI secret references.
-   List each name, where it is read, and whether local build, local run, or
-   CI needs it.
-2. Confirm tracked files and sample configs do not contain secret values. If
-   a value is committed, stop and report the path. Do not copy that value
-   into another file.
-3. Add or update an example file, such as `.env.example` or
-   `local.properties.example`, with names and short comments only. Point at
-   it from the existing setup doc, or add a short section if the repo has
-   none.
-4. Ignore real env files, keystores, API-key files, and `local.properties`.
-5. For CI, document the secret names the workflow expects. Store values in
-   the forge secret store, not in workflow YAML.
-6. From a clean shell, confirm the project reports missing names and that the
-   example file has no live credentials.
+1. List each variable name, where it is read, and whether local build, local run, or CI needs it.
+2. If a secret value is already committed, stop and report the path. Do not copy it.
+3. Update the example file with names and comments only. Ignore the real env files and keystores.
+4. Point CI at secret names in the forge secret store, not at values in the workflow.
 
-## TODO
+## Read next
 
-- [ ] Required variable names and which command needs each one
-- [ ] Example-file path this project prefers
-- [ ] Local keystore or signing-config convention
-- [ ] CI secret store (repository secrets, an environment, or another store)
-- [ ] Who may rotate values
+| Doc | When |
+| --- | --- |
+| [Env inventory](references/env-inventory.md) | Search, ignore rules, and TODOs |
+| [Example env file](examples/env.example) | Names and comments to adapt |
