@@ -1,23 +1,21 @@
-# Hey, I'm Matthew Barnard
+# Hey, it's Matt 👋
 
-I'm a senior technology consultant and Android engineer. I like software that stays up, a joke that lands, and a real night of sleep. This is the short version.
+I'm an Android engineer and tech consultant. These days that mostly means enterprise-grade Android tablets, and keeping them fast, observable, and boring in the best way. That's the tl;dr.
 
-## About me
+## A little about me
 
-I was born in western Massachusetts and raised in Maine. My first job was in seventh grade at a bagel shop.
+I was born in western Mass and raised in Maine. My first job was in 7th grade, slinging bagels at a local breakfast spot. I spent most of high school fitting and selling golf clubs, and I had a brief (and I mean *very* brief) stint checking IDs at the Brown Jug. iykyk.
 
-I didn't get into UNC out of high school. My mom moved to North Carolina after that, which opened a cheaper in-state side door. I spent a year at Michigan, then transferred to the University of North Carolina at Chapel Hill. I graduated with a B.A. in computer science and a minor in religious studies. Psychology, philosophy, and religion are still the other tabs I leave open. I also hold the Amplitude Fundamentals and LaunchDarkly Fundamentals certificates.
+I didn't get into UNC out of hs but... mom moved to NC my freshman year of college. And thus... the side door was open (in-state tuition++). So after a year at Michigan I transferred to Chapel Hill, where I got my CS degree with a minor in religious studies. I did really love UMich though, and I'll always be a Michigan man at heart. Psych, philosophy, and religion still eat up a good chunk of my reading list.
 
-## What I work on
+## What I'm usually working with
 
-I'm a senior consultant and an Android engineer. I build and run enterprise-grade Android tablet fleets, and a lot of the job is the observability, feature flags, and reliability work that keeps them honest.
+Most days it's Kotlin, Jetpack Compose, MUI, and Ditto. Before I landed in native Android a few years back, I helped port a web app to React Native. TypeScript, React, and Redux have been a minute, but I could dust off the cobwebs.
 
-Most days the stack is Kotlin, Java, Python, JavaScript, TypeScript, React, and Node, with HTML, CSS, and C++ in the mix. Operations lean on Android Studio, Datadog, OpenTelemetry, GitHub, CI, LaunchDarkly, Jira, and ServiceNow.
+## Off the clock
 
-## Outside of code
+Stand-up comedy, pickleball, cooking, menswear, and time with family and friends. I was also an insomniac for close to five years, mostly through school, so if you ever need sleep tips, hit me up.
 
-I love stand-up comedy, pickleball, cooking, menswear, and time with family and friends. I was an insomniac for close to five years, mostly through school. Sleep is in a good place now, and I have real sleep-hygiene tips if you need them.
+## Tinkering with AI
 
-## Skills library
-
-Reusable Cursor agent skills, the checklists I want an agent to follow, live in [skills/](skills/README.md).
+Lately I'm trying to stand up some tooling around Cursor, Hermes, Jev, and Grok. Most of the time I have no idea what I'm doing, but half the battle is just starting.
