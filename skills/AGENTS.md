@@ -1,8 +1,8 @@
 # Using this skills library
 
 This folder is a personal library of repo-agnostic Cursor agent skills. The
-profile `README.md` is only a title and a link here. Do not add repository
-names, packages, or secrets to the library.
+profile `README.md` is Matthew's public GitHub profile and links here. Do not
+add repository names, packages, or secrets to the library.
 
 ## Discovery
 
