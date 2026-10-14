@@ -52,6 +52,7 @@ items in the skill's `references/` doc.
 | [secrets-and-env-setup](secrets-and-env-setup/SKILL.md) | Declaring env and secrets so a checkout can build. |
 | [interview-prep-practice](interview-prep-practice/SKILL.md) | Running a timed computer-science practice session. |
 | [repo-sync-mirrors](repo-sync-mirrors/SKILL.md) | Fast-forwarding GitHub and Cursor Origin copies onto the same commit. |
+| [jev](jev/SKILL.md) | Classifying, scoring, or routing a ticket or incoming item as a Jev decision. |
 
 ## Layout
 

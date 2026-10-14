@@ -23,6 +23,7 @@ Installed skills (delete rows that are not installed):
 - [ ] `secrets-and-env-setup`
 - [ ] `interview-prep-practice`
 - [ ] `repo-sync-mirrors`
+- [ ] `jev` — classify, score, and route with a typed decision
 
 ## Workflow
 
